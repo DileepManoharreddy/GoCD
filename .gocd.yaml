@@ -2,7 +2,7 @@ format_version: 10
 
 pipelines:
   go-weather-ci:
-    group: go-apps
+    group: default
     materials:
       repo:
         git: https://github.com/YOUR_USERNAME/go-weather-app.git
