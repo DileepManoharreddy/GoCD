@@ -1,0 +1,20 @@
+format_version: 10
+
+pipelines:
+  go-weather-ci:
+    group: go-apps
+    materials:
+      repo:
+        git: https://github.com/YOUR_USERNAME/go-weather-app.git
+        branch: main
+    stages:
+      - build:
+          jobs:
+            build-go-image:
+              tasks:
+                - exec:
+                    command: docker
+                    arguments: ["build", "-t", "go-weather-app", "."]
+                - exec:
+                    command: docker
+                    arguments: ["images"]
