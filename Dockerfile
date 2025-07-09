@@ -7,7 +7,7 @@ COPY go.mod ./
 RUN go mod download
 
 COPY . .
-RUN go build -o weather-app
+RUN go build -o weather-appdd
 
 # ---------- STAGE 2: Run ----------
 FROM alpine:latest
