@@ -6,7 +6,7 @@ pipelines:
     materials:
       repo:
         git: https://github.com/YOUR_USERNAME/go-weather-app.git
-        branch: main
+        branch: master
     stages:
       - build:
           jobs:
